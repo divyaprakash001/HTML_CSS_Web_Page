@@ -3,6 +3,9 @@
 
 <head>
   <title>My First Web Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -13,7 +16,7 @@
   </div>
 
   <img id="banner" src="banner.jpg" alt="banner" height="240" />
-  
+
   <h1>About Divya</h1>
   <div id="about">
     <div id="description">
@@ -43,21 +46,45 @@
 
   <h2>Job Opportunity</h2>
   <div id="jobs">
-    <div>
-      <a href="mailto:divyaprakashara09@gmail.com?subject=Frontend" target="_blank" class="apply">Apply</a>
-      <h3 class="job-role">Frontend Developer</h3>
-      <div class="location">Benguluru,India</div>
-    </div>
-    <div>
-      <a href="mailto:divyaprakashara09@gmail.com?subject=Backend" target="_blank" class="apply">Apply</a>
-      <h3 class="job-role">Backend Developer</h3>
-      <div class="location">Remote</div>
-    </div>
-    <div>
-      <a href="mailto:divyaprakashara09@gmail.com?subject=Data Scientist" target="_blank" class="apply">Apply</a>
-      <h3 class="job-role">Data Scientist</h3>
-      <div class="location">Mumbai, India</div>
-    </div>
+    <table id="jobs-table">
+      <tr class="jobs-header-row">
+        <th rowspan="2">Job title</th>
+        <th colspan="2">Location</th>
+        <th rowspan="2">Salary</th>
+        <th rowspan="2">Posted On</th>
+      </tr>
+      <tr class="jobs-header-row">
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>Frontend Engg.</td>
+        <td>Benguluru</td>
+        <td>India</td>
+        <td>Rs. 12,00,000</td>
+        <td>12 Jan, 2024</td>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>Full Stack Engg.</td>
+        <td>Delhi</td>
+        <td>India</td>
+        <td>Rs. 15,00,000</td>
+        <td>19 Jan, 2024</td>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>Data Scientist</td>
+        <td>San Francisco</td>
+        <td>US</td>
+        <td>$ 75,000</td>
+        <td>22 Jan, 2024</td>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>AI Engineer</td>
+        <td colspan="2">Remote</td>
+        <td>$ 89,000</td>
+        <td>26 Jan, 2024</td>
+      </tr>
+    </table>
   </div>
 
 
