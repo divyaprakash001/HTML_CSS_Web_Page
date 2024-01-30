@@ -1,8 +1,19 @@
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #444444;
 }
+
+h1 {
+    font-size: 2.5rem;
+}
+
 
 h1,
 h2,
@@ -11,10 +22,42 @@ h4,
 h5,
 h6 {
     font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #222222;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
 
 a {
     text-decoration: none;
+    color: #3b82f6;
+}
+
+a:hover,
+a:focus {
+    color: #1d4ed8;
 }
 
 #navbar {
@@ -48,6 +91,7 @@ h1 {
 #description {
     width: 50%;
     padding-right: 8px;
+    font-size: 1.25rem;
 }
 
 #team {
@@ -80,8 +124,9 @@ h2 {
 .jobs-header-row th {
     border: 1px solid gray;
     padding: 8px;
-    background-color: aliceblue;
+    background-color: #dbeafe;
     text-align: center;
+    color: #222222;
 }
 
 .jobs-data-row td {
@@ -90,12 +135,53 @@ h2 {
 }
 
 #jobs-table tr:nth-child(odd) {
-    background-color: ghostwhite;
+    background-color: #eff6ff;
+}
+
+#application {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin: 16px 0;
 }
 
 
+#application-form label {
+    font-weight: 600;
+}
+
+#application-form input,
+select,
+textarea {
+    padding: 8px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form-group textarea {
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group input[type='checkbox']{
+    width: 16px;
+    height: 16px;
+}
+
+.form-group input[type='submit']{
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 #footer {
-    background-color: ghostwhite;
+    background-color: #fafafa;
     padding: 8px;
     margin-top: 32px;
     text-align: center;
@@ -111,5 +197,6 @@ h2 {
 }
 
 .copyright {
-    color: grey;
+    color: #71717a;
+    font-size: 0.875rem;
 }
