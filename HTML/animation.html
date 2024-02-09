@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .btn {
+            /* margin: 100px; */
+            border: 1px solid red;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            animation-name: anima;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.4s;
+            animation-iteration-count: infinite;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+
+        @keyframes anima {
+            from{
+                top: 100px;
+                left: 100px;
+            }
+            to{
+                top: 200px;
+                left: 200px;
+            }
+        }
+
+        @keyframes anima {
+            0%{
+                top: 100px;
+                left: 100px;
+            }
+            
+            25%{
+                
+                left: 300px;
+            }
+            
+            50%{
+                left: 400px;
+
+            }
+            
+            100%{
+                top: 200px;
+                left: 200px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="btn" href="#">click me</div>
+
+</body>
+
+</html>
